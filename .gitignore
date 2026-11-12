@@ -1,0 +1,62 @@
+# ------------------------------------------------------------
+# AI 에이전트 작업 상태 (로컬 경로·세션 ID·초안 포함 → 공개 대상 아님)
+# ------------------------------------------------------------
+.omo/
+.codegraph
+.claude/settings.local.json
+.opencode/
+.aider*
+.cursor/
+
+# ------------------------------------------------------------
+# 자격 증명·비밀 정보 (GCP 실습 특성상 미리 차단)
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials.json
+*-credentials.json
+service-account*.json
+*-sa-key.json
+application_default_credentials.json
+.gcloud/
+.config/gcloud/
+
+# Terraform 상태 파일 (리소스 ID·출력값에 비밀이 포함될 수 있음)
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+.terraform/
+.terraform.lock.hcl
+
+# ------------------------------------------------------------
+# OS / 에디터
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------
+# 빌드·런타임 산출물 (향후 코드 추가 대비)
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+dist/
+build/
+*.log
+tmp/
